@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400" prefWidth="600" spacing="20" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="controladores.vistaAgregarProductoController">
+    <stylesheets>
+        <URL value="@../styles/stylesBotones.css" />
+    </stylesheets>
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+    <Label style="-fx-font-weight: bold; -fx-font-size: 18px;" text="Agregar Producto" />
+    <HBox spacing="10">
+
+        <ComboBox fx:id="tipoProducto" prefWidth="200" promptText="Seleccione el tipo de producto">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Maquillaje" />
+                    <String fx:value="Joyeria" />
+                    <String fx:value="Perfumeria" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <TextField fx:id="nombreProducto" prefWidth="200" promptText="Nombre del producto" />
+        <TextField fx:id="idProducto" prefWidth="100" promptText="ID del producto" />
+        <TextField fx:id="cantidadProducto" prefWidth="100" promptText="Cantidad del producto" />
+    </HBox>
+     <ComboBox fx:id="consultorProducto" />
+    <Button onAction="#agregarProducto" prefWidth="150" styleClass="button" text="Agregar" />
+    <Button onAction="#regresar" prefWidth="150" styleClass="button" text="Regresar" />
+</VBox>

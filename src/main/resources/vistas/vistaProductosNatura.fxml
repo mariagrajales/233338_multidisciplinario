@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import java.net.URL?>
+<VBox alignment="CENTER" prefHeight="400" prefWidth="600" spacing="20" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.vistaProductosNaturaController">
+    <stylesheets>
+        <URL value="@../styles/stylesBotones.css" />
+    </stylesheets>
+    <Text text="Gestión de Productos Natura" />
+    <Button onAction="#verProductos" text="Ver Productos" styleClass="button" />
+    <Button onAction="#agregarProducto" text="Agregar Productos" styleClass="button" />
+    <Button onAction="#btnRegresar" text="Regresar" styleClass="button" />
+</VBox>

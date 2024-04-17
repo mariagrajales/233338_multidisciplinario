@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.vistaBuscarController">
+    <stylesheets>
+        <URL value="@../styles/stylesBotones.css" />
+    </stylesheets>
+
+    <HBox alignment="CENTER" layoutX="10.0" layoutY="20.0" spacing="10" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <TextField fx:id="searchField" prefHeight="40.0" prefWidth="300" promptText="Escribe el nombre del consultor" />
+        <Button fx:id="searchButton" onAction="#buscarConsultor" styleClass="button" text="Buscar" />
+    </HBox>
+
+    <TableView fx:id="resultsTable" layoutY="79.0" prefHeight="243.0" prefWidth="580.0" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="79.0">
+        <columns>
+            <TableColumn fx:id="colId" text="Codigo" />
+            <TableColumn fx:id="colNombre" text="Nombre" />
+            <TableColumn fx:id="colApellidoPaterno" text="Apellido Paterno" />
+            <TableColumn fx:id="colApellidoMaterno" text="Apellido Materno" />
+            <TableColumn fx:id="colTelefono" text="Telefono" />
+            <TableColumn fx:id="colEmail" text="Email" />
+        </columns>
+    </TableView>
+
+    <Button fx:id="backButton" alignment="CENTER" layoutX="238.0" layoutY="338.0" onAction="#btnRegresar" prefHeight="43.0" prefWidth="123.0" styleClass="button" text="Regresar" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="238.66666666666669" />
+</AnchorPane>

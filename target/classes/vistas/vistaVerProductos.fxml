@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="399.0" prefWidth="600" spacing="20" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.vistaVerProductosController">
+    <stylesheets>
+        <URL value="@../styles/stylesBotones.css" />
+    </stylesheets>
+    <TableView fx:id="tablaProductos" prefHeight="331.0" prefWidth="408.0">
+        <columns>
+            <TableColumn fx:id="columnaNombre" prefWidth="160.00000512599945" text="Nombre">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nombre" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="columnaId" minWidth="0.0" prefWidth="79.99996948242188" text="ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="columnaCantidad" minWidth="0.0" prefWidth="79.99998474121094" text="Cantidad">
+                <cellValueFactory>
+                    <PropertyValueFactory property="cantidad" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="columnaTipo" minWidth="0.0" text="Tipo">
+                <cellValueFactory>
+                    <PropertyValueFactory property="tipo" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="columnaConsultor" minWidth="0.0" prefWidth="198.0" text="Nombre de quien hizo el pedido">
+    <cellValueFactory>
+        <PropertyValueFactory property="consultor" />
+    </cellValueFactory>
+</TableColumn>
+            <TableColumn fx:id="columnaEliminar" minWidth="0.0" prefWidth="79.33331298828125">
+                <cellValueFactory>
+                    <PropertyValueFactory property="eliminar" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <Button fx:id="btnRegresar" onAction="#regresar" styleClass="button" text="Regresar" />
+</VBox>

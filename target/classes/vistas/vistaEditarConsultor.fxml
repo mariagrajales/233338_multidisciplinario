@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="360.0" prefWidth="187.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.vistaEditarConsultorController">
+   <stylesheets>
+        <URL value="@../styles/stylesBotones.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="txtId" layoutX="20.0" layoutY="20.0" />
+      <TextField fx:id="txtNombre" layoutX="20.0" layoutY="60.0" />
+      <TextField fx:id="txtApellidoPaterno" layoutX="20.0" layoutY="100.0" />
+      <TextField fx:id="txtApellidoMaterno" layoutX="20.0" layoutY="140.0" />
+      <TextField fx:id="txtTelefono" layoutX="20.0" layoutY="180.0" />
+      <TextField fx:id="txtDireccion" layoutX="20.0" layoutY="220.0" />
+      <TextField fx:id="txtEmail" layoutX="20.0" layoutY="260.0" />
+      <Button fx:id="btnGuardar" layoutX="37.0" layoutY="293.0" styleClass="button" text="Guardar" />
+   </children>
+</AnchorPane>
